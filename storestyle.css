@@ -1,0 +1,296 @@
+/* ==========================================
+   CROCHETING CAPTAIN - STORE PAGE
+   Theme inspired by the Crocheting Captain logo
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background: linear-gradient(180deg,#0b1e3a,#153f67,#1f6aa5);
+    color:#f5f8fc;
+    line-height:1.6;
+}
+
+/* ===========================
+        HEADER
+=========================== */
+
+header{
+    background:linear-gradient(135deg,#0d2345,#1f6aa5);
+    text-align:center;
+    padding:30px;
+    border-bottom:4px solid #f4c542;
+    box-shadow:0 5px 15px rgba(0,0,0,.4);
+}
+
+header h1{
+    color:#ffffff;
+    font-size:3rem;
+    letter-spacing:3px;
+    text-shadow:
+        0 0 8px rgba(255,255,255,.5),
+        0 0 15px rgba(244,197,66,.4);
+}
+
+header p{
+    color:#d8e8ff;
+    margin-top:10px;
+    font-size:1.1rem;
+}
+
+/* ===========================
+        NAVIGATION
+=========================== */
+
+nav{
+    background:#0d2345;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:18px;
+    padding:15px;
+    border-bottom:2px solid #f4c542;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    padding:10px 18px;
+    border-radius:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:#f4c542;
+    color:#0d2345;
+    transform:translateY(-2px);
+}
+
+/* ===========================
+      STORE INTRO
+=========================== */
+
+.store-intro{
+    width:90%;
+    max-width:1100px;
+    margin:40px auto;
+    text-align:center;
+}
+
+.store-intro h2{
+    font-size:2.2rem;
+    color:#f4c542;
+    margin-bottom:15px;
+}
+
+.store-intro p{
+    color:#edf5ff;
+    font-size:1.05rem;
+}
+
+/* ===========================
+      PRODUCT GRID
+=========================== */
+
+.product-grid{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+    padding-bottom:50px;
+}
+
+/* ===========================
+      PRODUCT CARD
+=========================== */
+
+.product-card{
+    background:#ffffff;
+    color:#1a2b44;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    transition:.35s;
+    border:3px solid transparent;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+    border-color:#f4c542;
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+.product-card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+/* Placeholder if no image yet */
+
+.product-placeholder{
+    height:260px;
+    background:linear-gradient(135deg,#1f6aa5,#4ca3dd);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:4rem;
+}
+
+/* ===========================
+      PRODUCT DETAILS
+=========================== */
+
+.product-info{
+    padding:22px;
+}
+
+.product-info h3{
+    color:#0d2345;
+    margin-bottom:10px;
+    font-size:1.4rem;
+}
+
+.product-info p{
+    color:#555;
+    margin-bottom:15px;
+    min-height:70px;
+}
+
+.price{
+    color:#1f6aa5;
+    font-size:1.5rem;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+/* ===========================
+        BUTTON
+=========================== */
+
+.buy-btn{
+    display:inline-block;
+    width:100%;
+    text-align:center;
+    background:#f4c542;
+    color:#0d2345;
+    padding:12px;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.buy-btn:hover{
+    background:#0d2345;
+    color:white;
+}
+
+/* ===========================
+       FEATURED SECTION
+=========================== */
+
+.featured{
+    width:90%;
+    max-width:1200px;
+    margin:50px auto;
+}
+
+.featured h2{
+    text-align:center;
+    color:#f4c542;
+    margin-bottom:30px;
+    font-size:2rem;
+}
+
+/* ===========================
+      SHOP NOTICE
+=========================== */
+
+.shop-notice{
+    width:90%;
+    max-width:900px;
+    margin:60px auto;
+    background:rgba(255,255,255,.12);
+    border-left:6px solid #f4c542;
+    padding:25px;
+    border-radius:15px;
+    backdrop-filter:blur(8px);
+}
+
+.shop-notice h3{
+    color:#f4c542;
+    margin-bottom:10px;
+}
+
+.shop-notice p{
+    color:white;
+}
+
+/* ===========================
+          FOOTER
+=========================== */
+
+footer{
+    margin-top:60px;
+    background:#0d2345;
+    text-align:center;
+    padding:25px;
+    border-top:3px solid #f4c542;
+}
+
+footer p{
+    color:#d8e8ff;
+}
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media (max-width:768px){
+
+header h1{
+    font-size:2.3rem;
+}
+
+.store-intro h2{
+    font-size:1.8rem;
+}
+
+.product-card img,
+.product-placeholder{
+    height:220px;
+}
+
+}
+
+@media (max-width:500px){
+
+nav{
+    flex-direction:column;
+    align-items:center;
+}
+
+nav a{
+    width:90%;
+    text-align:center;
+}
+
+header h1{
+    font-size:2rem;
+}
+
+.store-intro p{
+    font-size:1rem;
+}
+
+}

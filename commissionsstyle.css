@@ -1,0 +1,597 @@
+
+/* ==========================================
+   THE CROCHETING CAPTAIN
+   COMMISSIONS PAGE STYLESHEET
+   ========================================== */
+
+/* ===== COLOR PALETTE ===== */
+:root {
+    --space: #101527;
+    --navy: #19233c;
+    --navy-light: #283654;
+    --purple: #51416f;
+    --gold: #d8ac65;
+    --gold-light: #f4d59a;
+    --cream: #fff5e5;
+    --muted: #d5d7e3;
+    --border: rgba(216, 172, 101, 0.35);
+}
+
+/* ===== GENERAL PAGE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #101527 0%,
+        #1d2844 55%,
+        #302847 100%
+    );
+    color: var(--cream);
+    line-height: 1.7;
+    min-height: 100vh;
+}
+
+/* ===== WEBSITE HEADER ===== */
+header,
+.site-header {
+    background: linear-gradient(
+        135deg,
+        #101527,
+        #253454,
+        #453457
+    );
+
+    text-align: center;
+    padding: 45px 20px 35px;
+    border-bottom: 3px solid var(--gold);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== WEBSITE LOGO ===== */
+header img,
+.site-header img,
+.logo {
+    display: block;
+    width: 170px;
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto 20px;
+    object-fit: contain;
+    filter: drop-shadow(
+        0 5px 12px rgba(0, 0, 0, 0.4)
+    );
+}
+
+/* ===== WEBSITE NAME ===== */
+header h1,
+.site-header h1 {
+    color: #fff4d9 !important;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 10px 0 15px;
+
+    text-shadow:
+        2px 3px 5px rgba(0, 0, 0, 0.8),
+        0 0 18px rgba(244, 213, 154, 0.3);
+}
+
+header p,
+.site-header p,
+.tagline {
+    color: var(--gold-light);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+/* ===== NAVIGATION BAR ===== */
+nav {
+    background-color: #141d33;
+    border-bottom: 1px solid var(--border);
+    padding: 15px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px 25px;
+    list-style: none;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background-color: var(--gold);
+    color: var(--space);
+}
+
+nav a.active,
+nav a[aria-current="page"] {
+    color: var(--gold-light);
+    border-bottom: 2px solid var(--gold);
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 45px auto;
+}
+
+main h1,
+main h2,
+main h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--gold-light);
+    line-height: 1.3;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+main h2 {
+    font-size: 1.8rem;
+    margin-bottom: 18px;
+}
+
+main h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+main p {
+    color: var(--muted);
+    margin-bottom: 18px;
+}
+
+main a {
+    color: var(--gold-light);
+}
+
+main a:hover {
+    color: #ffffff;
+}
+
+/* ===== COMMISSIONS INTRODUCTION ===== */
+.commissions-intro,
+.commission-intro,
+.commissions-hero {
+    text-align: center;
+    padding: 45px 30px;
+    margin-bottom: 35px;
+
+    background: linear-gradient(
+        145deg,
+        #222e4c,
+        #302944
+    );
+
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.commissions-intro h2,
+.commission-intro h2,
+.commissions-hero h2 {
+    font-size: 2rem;
+    color: var(--gold-light);
+}
+
+.commissions-intro p,
+.commission-intro p,
+.commissions-hero p {
+    max-width: 750px;
+    margin: 15px auto;
+    font-size: 1.05rem;
+}
+
+/* ===== COMMISSION SECTIONS ===== */
+main section {
+    margin-bottom: 35px;
+}
+
+.commission-info,
+.commission-details,
+.commission-guidelines,
+.commission-process,
+.commission-pricing,
+.commission-form,
+.commission-request {
+    background-color: rgba(30, 40, 66, 0.95);
+    padding: 35px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== COMMISSION CARDS ===== */
+.commission-cards,
+.commission-options {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(250px, 1fr)
+    );
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.commission-card,
+.commission-option {
+    background: linear-gradient(
+        145deg,
+        #263451,
+        #322d49
+    );
+
+    padding: 30px 25px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.commission-card:hover,
+.commission-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.commission-card h3,
+.commission-option h3 {
+    color: var(--gold-light);
+}
+
+/* ===== LISTS ===== */
+main ul,
+main ol {
+    margin: 15px 0 20px 25px;
+    padding-left: 10px;
+}
+
+main li {
+    margin-bottom: 12px;
+    color: var(--muted);
+}
+
+main li::marker {
+    color: var(--gold);
+}
+
+/* ===== COMMISSION REQUEST FORM ===== */
+form {
+    width: 100%;
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 35px;
+
+    background: linear-gradient(
+        145deg,
+        #202c49,
+        #2b2a45
+    );
+
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
+}
+
+form h2,
+form h3 {
+    color: var(--gold-light);
+    margin-bottom: 20px;
+}
+
+/* ===== FORM LABELS ===== */
+label {
+    display: block;
+    color: var(--cream);
+    font-weight: bold;
+    margin: 18px 0 8px;
+    font-size: 1rem;
+}
+
+/* ===== FORM INPUTS ===== */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 13px 15px;
+
+    background-color: #fdf7ee;
+    color: #182039;
+
+    border: 2px solid transparent;
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(216, 172, 101, 0.2);
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #687083;
+}
+
+/* ===== RADIO BUTTONS AND CHECKBOXES ===== */
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: var(--gold);
+    margin-right: 8px;
+    width: 17px;
+    height: 17px;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    display: inline;
+    font-weight: normal;
+}
+
+/* ===== FIELDSETS ===== */
+fieldset {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+legend {
+    color: var(--gold-light);
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* ===== BUTTONS ===== */
+button,
+input[type="submit"],
+.btn,
+.button {
+    display: inline-block;
+    padding: 14px 28px;
+
+    background: linear-gradient(
+        135deg,
+        #e9c487,
+        #c89a53
+    );
+
+    color: #141b2c;
+    border: none;
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                background 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover,
+.btn:hover,
+.button:hover {
+    background: linear-gradient(
+        135deg,
+        #ffe0a6,
+        #e0b46d
+    );
+
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(216, 172, 101, 0.3);
+}
+
+button:focus-visible,
+.btn:focus-visible,
+.button:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 3px;
+}
+
+/* ===== IMPORTANT NOTES ===== */
+.commission-note,
+.important-note,
+.notice {
+    background-color: rgba(216, 172, 101, 0.1);
+    border-left: 4px solid var(--gold);
+    padding: 20px 25px;
+    border-radius: 0 10px 10px 0;
+    margin: 25px 0;
+}
+
+.commission-note p,
+.important-note p,
+.notice p {
+    color: var(--cream);
+    margin-bottom: 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #101729;
+    color: var(--muted);
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-top: 2px solid var(--gold);
+}
+
+footer p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+}
+
+footer a {
+    color: var(--gold-light);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ===== TABLET RESPONSIVENESS ===== */
+@media (max-width: 768px) {
+    header,
+    .site-header {
+        padding: 35px 15px;
+    }
+
+    header img,
+    .logo {
+        width: 135px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 8px 10px;
+        font-size: 0.95rem;
+    }
+
+    main {
+        width: 94%;
+        margin: 30px auto;
+    }
+
+    .commission-info,
+    .commission-details,
+    .commission-guidelines,
+    .commission-process,
+    .commission-pricing,
+    .commission-form,
+    .commission-request {
+        padding: 25px;
+    }
+
+    form {
+        padding: 25px;
+    }
+}
+
+/* ===== MOBILE RESPONSIVENESS ===== */
+@media (max-width: 480px) {
+    header h1,
+    .site-header h1 {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    header p,
+    .tagline {
+        font-size: 0.95rem;
+    }
+
+    nav ul {
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+
+    .commissions-intro,
+    .commission-intro,
+    .commissions-hero {
+        padding: 30px 18px;
+    }
+
+    .commission-info,
+    .commission-details,
+    .commission-guidelines,
+    .commission-process,
+    .commission-pricing,
+    .commission-form,
+    .commission-request {
+        padding: 20px;
+    }
+
+    form {
+        padding: 20px 15px;
+    }
+
+    button,
+    input[type="submit"] {
+        width: 100%;
+    }
+}
+
+/* ===== ACCESSIBILITY ===== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+        animation: none !important;
+    }
+}

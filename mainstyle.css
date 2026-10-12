@@ -1,0 +1,565 @@
+
+/* ==========================================
+   THE CROCHETING CAPTAIN
+   MAIN MENU STYLESHEET
+========================================== */
+
+/* COLOR PALETTE */
+:root {
+    --navy: #080d1c;
+    --navy-light: #15213b;
+    --cosmic-blue: #253e75;
+    --gold: #d8a454;
+    --gold-light: #f0c77e;
+    --burgundy: #712a38;
+    --ivory: #f6e8cf;
+    --white: #ffffff;
+    --muted: #c7c3cc;
+}
+
+/* GENERAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--navy);
+    color: var(--ivory);
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    line-height: 1.3;
+}
+
+h1, h2 {
+    color: var(--gold);
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* ==========================================
+   HEADER AND LOGO
+========================================== */
+
+header,
+.site-header {
+    background: linear-gradient(
+        135deg,
+        #080d1c,
+        #15213b,
+        #253e75
+    );
+
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 3px solid var(--gold);
+}
+
+.logo,
+.site-logo {
+    display: block;
+    width: 170px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 15px;
+    object-fit: contain;
+}
+
+header h1,
+.site-header h1 {
+    font-size: 2.5rem;
+    color: var(--gold);
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(216,164,84,.25);
+}
+
+header p,
+.site-header p {
+    color: var(--ivory);
+    font-size: 1.05rem;
+}
+
+/* ==========================================
+   NAVIGATION BAR
+========================================== */
+
+nav,
+.navbar {
+    background-color: #10192e;
+    border-bottom: 2px solid var(--gold);
+    padding: 15px 20px;
+}
+
+nav ul,
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px 25px;
+    list-style: none;
+}
+
+nav ul li a,
+.navbar a {
+    display: inline-block;
+    color: var(--ivory);
+    font-size: 0.95rem;
+    font-weight: bold;
+    padding: 9px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover,
+.navbar a:hover {
+    background-color: var(--burgundy);
+    color: var(--gold-light);
+    transform: translateY(-2px);
+}
+
+nav a.active,
+nav a[aria-current="page"] {
+    color: var(--gold);
+    border-bottom: 2px solid var(--gold);
+}
+
+nav a:focus-visible {
+    outline: 2px solid var(--gold-light);
+    outline-offset: 3px;
+}
+
+/* ==========================================
+   MAIN CONTENT
+========================================== */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 45px 25px;
+}
+
+section {
+    margin-bottom: 55px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* ==========================================
+   WELCOME / HERO SECTION
+========================================== */
+
+.hero,
+.welcome,
+#welcome {
+    text-align: center;
+    padding: 75px 30px;
+
+    background: linear-gradient(
+        135deg,
+        var(--navy-light),
+        var(--cosmic-blue),
+        var(--navy-light)
+    );
+
+    border: 1px solid rgba(216,164,84,.45);
+    border-radius: 15px;
+}
+
+.hero h2,
+.welcome h2,
+#welcome h2 {
+    font-size: 2.4rem;
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+.hero p,
+.welcome p,
+#welcome p {
+    max-width: 750px;
+    margin: 0 auto 25px;
+    color: var(--ivory);
+    font-size: 1.1rem;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn,
+.button,
+button,
+input[type="submit"] {
+    display: inline-block;
+    padding: 13px 26px;
+    border: 2px solid var(--gold);
+    border-radius: 8px;
+
+    background-color: var(--gold);
+    color: var(--navy);
+
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.btn:hover,
+.button:hover,
+button:hover,
+input[type="submit"]:hover {
+    background-color: var(--burgundy);
+    color: var(--white);
+    border-color: var(--gold-light);
+    transform: translateY(-2px);
+}
+
+.btn:focus-visible,
+.button:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--gold-light);
+    outline-offset: 3px;
+}
+
+/* ==========================================
+   INTRODUCTION SECTION
+========================================== */
+
+.introduction,
+.intro,
+#introduction {
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.introduction p,
+.intro p,
+#introduction p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    color: var(--muted);
+}
+
+/* ==========================================
+   FEATURED PROJECTS / STORE PREVIEW
+========================================== */
+
+.featured-projects,
+.featured-products,
+.store-preview {
+    text-align: center;
+}
+
+.project-grid,
+.product-grid,
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(250px, 1fr)
+    );
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.project-card,
+.product-card,
+.feature-card {
+    background-color: var(--navy-light);
+    border: 1px solid rgba(216,164,84,.4);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.project-card:hover,
+.product-card:hover,
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,.3);
+}
+
+.project-card img,
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-card h3,
+.product-card h3,
+.feature-card h3 {
+    color: var(--gold);
+    margin-bottom: 12px;
+}
+
+.project-card p,
+.product-card p,
+.feature-card p {
+    color: var(--muted);
+}
+
+/* ==========================================
+   ABOUT PREVIEW
+========================================== */
+
+.about-preview,
+.about-section {
+    background-color: var(--navy-light);
+    border-left: 5px solid var(--gold);
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.about-preview h2,
+.about-section h2 {
+    margin-bottom: 15px;
+}
+
+/* ==========================================
+   NEWSLETTER
+========================================== */
+
+.newsletter,
+#newsletter {
+    background: linear-gradient(
+        135deg,
+        #15213b,
+        #253e75
+    );
+
+    border: 2px solid var(--gold);
+    border-radius: 15px;
+    padding: 45px 25px;
+    text-align: center;
+}
+
+.newsletter h2,
+#newsletter h2 {
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+.newsletter p,
+#newsletter p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+.newsletter form,
+#newsletter form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.newsletter input[type="email"],
+#newsletter input[type="email"] {
+    width: 100%;
+    max-width: 350px;
+    padding: 13px 15px;
+
+    background-color: var(--ivory);
+    color: var(--navy);
+
+    border: 2px solid var(--gold);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.newsletter input:focus,
+#newsletter input:focus {
+    outline: 3px solid var(--gold-light);
+    outline-offset: 2px;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer,
+.site-footer {
+    background-color: #050914;
+    color: var(--muted);
+    border-top: 3px solid var(--gold);
+    padding: 35px 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: var(--gold);
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--gold-light);
+    text-decoration: underline;
+}
+
+/* ==========================================
+   TABLET RESPONSIVENESS
+========================================== */
+
+@media (max-width: 768px) {
+
+    header h1,
+    .site-header h1 {
+        font-size: 2rem;
+    }
+
+    .logo,
+    .site-logo {
+        width: 140px;
+    }
+
+    nav ul,
+    .navbar ul {
+        gap: 10px;
+    }
+
+    nav ul li a,
+    .navbar a {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+
+    main {
+        padding: 30px 15px;
+    }
+
+    .hero,
+    .welcome,
+    #welcome {
+        padding: 50px 20px;
+    }
+
+    .hero h2,
+    .welcome h2,
+    #welcome h2 {
+        font-size: 1.9rem;
+    }
+
+    section h2 {
+        font-size: 1.7rem;
+    }
+}
+
+/* ==========================================
+   MOBILE RESPONSIVENESS
+========================================== */
+
+@media (max-width: 480px) {
+
+    header,
+    .site-header {
+        padding: 25px 15px;
+    }
+
+    header h1,
+    .site-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .logo,
+    .site-logo {
+        width: 120px;
+    }
+
+    nav ul,
+    .navbar ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav ul li,
+    nav ul li a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero,
+    .welcome,
+    #welcome {
+        padding: 35px 15px;
+    }
+
+    .hero h2,
+    .welcome h2,
+    #welcome h2 {
+        font-size: 1.6rem;
+    }
+
+    .project-grid,
+    .product-grid,
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter,
+    #newsletter {
+        padding: 30px 15px;
+    }
+
+    .newsletter form,
+    #newsletter form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .newsletter input[type="email"],
+    #newsletter input[type="email"] {
+        max-width: 100%;
+    }
+
+    .newsletter button,
+    #newsletter button {
+        width: 100%;
+    }
+}
+
+/* ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
