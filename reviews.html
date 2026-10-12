@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - The Crocheting Captain</title>
+    <link rel="stylesheet" href="CSS/reviewstyle.css">
+    <img src="Logo/logo.png" alt="Crocheting Captain Logo" class="logo" style="width: 50px !important; height: 50px !important; max-width: 50px !important; max-height: 50px !important; object-fit: contain;">
+</head>
+<body>
+    <!--navigation-->
+    <header>
+        <h1>Reviews</h1>
+        <nav aria-label="Main menu">
+            <ul>
+                <li><a href="index.html">Main Menu</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="commissions.html">Commissions</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Customer Reviews</h1>
+            <p>
+                
+            </p>
+            <!-- Reviews will be dynamically loaded here -->
+        </section>
+        <!--Leave a review section-->
+        <section>
+            <h1>Leave a Review</h1>
+            <form action="submit_review.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="review">Review:</label>
+                <textarea id="review" name="review" required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="current-year"></span> The Crocheting Captain
+        </p>
+    </footer>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

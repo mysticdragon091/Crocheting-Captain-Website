@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commissions - The Crocheting Captain</title>
+    <link rel="stylesheet" href="css/commissionsstyle.css">
+    <img src="Logo/logo.png" alt="Crocheting Captain Logo" class="logo" style="width: 50px !important; height: 50px !important; max-width: 50px !important; max-height: 50px !important; object-fit: contain;">
+</head>
+<body>
+    <header>
+        <h1>Commissions</h1>
+
+        <nav aria-label="Main menu">
+            <ul>
+                <li><a href="index.html">Main Menu</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="commissions.html">Commissions</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Commission a Custom Crochet Piece</h2>
+            <p>
+                Looking for something custom-made for you? I would love to help make your idea a reality!
+                Whatever you are looking for, a custom made cozy, a scarf in your favorite colors, or 
+                another custom crochet creation, I would love to hear your idea.
+            </p>
+            <p>
+               Each commission is carefully handmade and every piece is unique.
+            </p>
+
+            <hr>
+            <section> 
+                <h2>Current Commission Types</h2>
+                <ul>
+                <li>Scarves</li>
+                <li>Blankets</li>
+                <li>Custom color requests</li>
+                <li>Gift commissions</li>
+            </ul>
+
+            <p>I will add more commission options in the future as my confidence in my skills as a crocheter grows.  </p>
+            </section>
+
+            <hr>
+            <section>
+                <h2>The Commission Process</h2>
+                <ol>
+                    <li>Fill out the commission request form below.</li>
+                    <li>I'll review your request.</li>
+                    <li>We'll discuss details, colors, size, and pricing.</li>
+                    <li>Once everything is finalized, I'll begin creating your project.</li>
+                    <li>I'll keep you updated throughout the process.</li>
+                </ol>
+            </section>
+            <hr>
+            <section>
+                <!--Pricing Information-->
+                <h2>Pricing Information</h2>
+                <p>
+                    Pricing depends on several factors, including:
+                </p>
+
+                <ul>
+                    <li>Project size</li>
+                    <li>Materials required</li>
+                    <li>Complexity</li>
+                    <li>Time needed to complete the project</li>
+                </ul>
+
+                <p>
+                    A price estimate will be provided before any work begins.
+                </p>
+            </section>
+            <hr>
+            <section>
+                <h2>Please Keep in Mind</h2>
+                <ul>
+                    <li>All items are handmade.</li>
+                    <li>Completion times vary depending on project size and current workload.</li>
+                    <li>Colors may vary slightly depending on yarn availability.</li>
+                    <li>I reserve the right to decline commission requests.</li>
+                </ul>
+        </section>
+        <hr>
+        <section>
+            <h2>Commission Request Form</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="project-type">Project Type:</label>
+                <select id="project-type" name="project-type" required>
+                    <option value="scarf">Scarf</option>
+                    <option value="blanket">Blanket</option>
+                    <option value="custom-color">Custom Color Request</option>
+                    <option value="gift">Gift Commission</option>
+                </select>
+
+                <label for="details">Project Details:</label>
+                <textarea id="details" name="details" required></textarea>
+
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="current-year"></span> The Crocheting Captain
+        </p>
+    </footer>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

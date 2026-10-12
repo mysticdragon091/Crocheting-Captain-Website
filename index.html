@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Crocheting Captain</title>
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <img src="Logo/logo.png" alt="Crocheting Captain Logo" class="logo" style="width: 50px !important; height: 50px !important; max-width: 50px !important; max-height: 50px !important; object-fit: contain;">
+</head>
+<body>
+    <header>
+        <h1>Welcome to The Crocheting Captain</h1>
+
+        <nav aria-label="Main menu">
+            <ul>
+                <li><a href="index.html">Main Menu</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="commissions.html">Commissions</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome!!</h2>
+            <p>
+                Welcome to the Crocheting Captain, my cozy little corner of the internet
+                where I show off my handmade crochet projects, sell my creation, and accept
+                commissions (within reason).
+            </p>
+            <p>
+                Check out my projects (finished and unfinished), learn more about me, 
+                explore my store to see what's available or ask for a commission
+            </p>
+             <form action="#" method="post">
+                <div>
+                    <label for="newsletter-name">Name:</label>
+                    <input
+                        type="text"
+                        id="newsletter-name"
+                        name="name"
+                        autocomplete="name"
+                    >
+                </div>
+
+                <div>
+                    <label for="newsletter-email">Email Address:</label>
+                    <input
+                        type="email"
+                        id="newsletter-email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <button type="submit">Subscribe to the Newsletter</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="current-year"></span> The Crocheting Captain
+        </p>
+    </footer>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

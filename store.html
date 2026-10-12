@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store - The Crocheting Captain</title>
+    <link rel="stylesheet" href="CSS/storestyle.css">
+    <img src="Logo/logo.png" alt="Crocheting Captain Logo" class="logo" style="width: 50px !important; height: 50px !important; max-width: 50px !important; max-height: 50px !important; object-fit: contain;">
+</head>
+<body>
+    <header>
+        <h1>Store</h1>
+
+        <nav aria-label="Main menu">
+            <ul>
+                <li><a href="index.html">Main Menu</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="commissions.html">Commissions</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>My Store</h2>
+            <p>
+                Here you can find a selection of my crochet products available for purchase.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="current-year"></span> The Crocheting Captain
+        </p>
+    </footer>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
